@@ -634,7 +634,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 72%;
   margin-top: 42px;
 }
 
@@ -809,10 +808,5 @@ img {
   padding: 8px 21px;
   border: none;
   border-radius: 5px;
-}
-
-.order__input:focus {
-  outline: none;
-  border-color: #d1cfcb;
 }
 /*# sourceMappingURL=main.css.map */
