@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+}

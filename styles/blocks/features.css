@@ -1,0 +1,23 @@
+.features {
+  background: url("../../img/features/bg-features.jpg") center center no-repeat;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 72%;
+  margin-top: 42px;
+}
+
+.features__item {
+  width: calc(100% / 3 - 26px);
+}
+/*# sourceMappingURL=features.css.map */

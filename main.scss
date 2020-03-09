@@ -1,0 +1,21 @@
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+@import './styles/layout/fonts';
+@import './styles/layout/normalize';
+@import './styles/layout/base';
+
+@import './styles/blocks/section.scss';
+@import './styles/blocks/header.scss';
+@import './styles/blocks/menu.scss';
+@import './styles/blocks/hero.scss';
+@import './styles/blocks/btn.scss';
+@import './styles/blocks/scroll-down.scss';
+@import './styles/blocks/features.scss';
+@import './styles/blocks/feature.scss';
+@import './styles/blocks/reviews.scss';
+@import './styles/blocks/review.scss';
+@import './styles/blocks/order-section.scss';
+@import './styles/blocks/order.scss';

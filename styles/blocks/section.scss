@@ -1,0 +1,27 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  min-height: 650px;
+
+  &--align--top {
+    justify-content: flex-start;
+  }
+}
+
+.section__title {
+  line-height: 85px;
+  color: $yellow;
+  font-family: "gagalin";
+  font-size: 72px;
+  line-height: 1.1;
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--color--black {
+    color: $black;
+  }
+}
