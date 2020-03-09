@@ -533,7 +533,7 @@ img {
   height: 4px;
   border-radius: 50%;
   background: currentColor;
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .menu__item:first-child:before {
@@ -541,7 +541,7 @@ img {
 }
 
 .menu__link {
-  margin-right: 15px;
+  margin-right: 17px;
   font-weight: 500;
   font-size: 13px;
   font-family: "ubuntu";
