@@ -1,0 +1,132 @@
+.menu-acco {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  
+}
+
+.menu-acco__item {
+  display: flex;
+}
+
+.menu-acco__trigger {  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--meat {
+    background: url('../../img/menu-burg/burgers\ \(2\).jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  &--vegan {
+    background: url('../../img/menu-burg/burgers\ \(3\).jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  &--diet {
+    background: url('../../img/menu-burg/burgers\ \(4\).jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  &::before {
+    content: "";
+    background: rgba(#2f3234, .93);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+  }
+}
+
+.menu-acco__trigger-text{
+  text-align: center;
+  font-family: "gagalin";
+  font-size: 2.5rem;
+  line-height: 5rem;
+  writing-mode: tb;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  margin-bottom: 2.5rem;
+}
+
+.menu-acco__content {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-family: "ubuntu";
+  font-weight: 300;
+  width: 0;
+  overflow: hidden;
+}
+
+
+// active
+
+.menu-acco__item--active {
+  display: flex;
+  justify-content: flex-end;
+
+  .menu-acco__trigger {  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+  text-transform: uppercase;
+
+    &::before {
+      content: "";
+      background: rgba(#2f3234, .93);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: .5;
+    }
+
+    &--meat {
+      background: url('../../img/menu-burg/burgers\ \(2\).jpg') center center no-repeat;
+      background-size: cover;
+    }
+
+    &--vegan {
+      background: url('../../img/menu-burg/burgers\ \(3\).jpg') center center no-repeat;
+      background-size: cover;
+    }
+
+    &--diet {
+      background: url('../../img/menu-burg/burgers\ \(4\).jpg') center center no-repeat;
+      background-size: cover;
+    }
+
+  }
+
+  .menu-acco__trigger-text{
+    text-align: center;
+    font-family: "gagalin";
+    font-size: 2.5rem;
+    line-height: 5rem;
+    color: $yellow;
+    writing-mode: tb;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    margin-bottom: 2.5rem;
+  }
+
+  .menu-acco__content {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-family: "ubuntu";
+    font-weight: 300;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+
+    p {
+      margin-top: 3.75rem;     
+    }
+  } 
+}
+

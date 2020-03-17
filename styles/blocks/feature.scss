@@ -5,28 +5,33 @@
 .feature__img {
   display: flex;
   justify-content: center;
+
+  .feature__img-elem {
+    width: 6.0625rem;
+    height: 5.5625rem;
+  }
 }
 
 .feature__content {
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 
 .feature__title {
-  letter-spacing: -1px;
-  line-height: 28px;
+  letter-spacing: -0.0625rem;
+  line-height: 1.75rem;
   color: $black;
   font-family: "lifehack";
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .feature__text {
-  padding-top: 15px;
+  padding-top: 0.9375rem;
   p {
-    line-height: 24px;
+    line-height: 1.5rem;
     color: $black;
     font-family: "ubuntu";
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }

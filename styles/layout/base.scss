@@ -3,27 +3,30 @@ body {
   height: 100%;
 }
 
-// body {
-//   font-size: 16px;
-//   line-height: 1.42;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   position: relative;
-//   @include ubuntu();
-//   color: $black;
-// }
+body {
+  font-size: 1rem;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  // @include ubuntu();
+  color: $black;
+}
 
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px + 20px;
+  // min-width: 58.75rem + 1.25rem;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  max-width: 58.75rem;
+  width: 95%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 

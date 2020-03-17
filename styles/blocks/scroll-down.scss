@@ -1,10 +1,13 @@
 .scroll-down {
-  background: url('../../img/scroll-down/scroll-down.png') center center no-repeat;
-  width: 30px;
-  height: 15px;
   position: absolute;
-  bottom: 40px;
+  bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
   list-style: none;
+
+  .scroll {
+    width: 1.875rem;
+    height: 0.9375rem;
+    
+  }
 }

@@ -1,0 +1,154 @@
+.menu-acco {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-acco__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-acco__trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-acco__trigger::before {
+  content: "";
+  background: rgba(47, 50, 52, 0.93);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+.menu-acco__trigger--meat {
+  background: url("../../img/menu-burg/burgers (2).jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.menu-acco__trigger--vegan {
+  background: url("../../img/menu-burg/burgers (3).jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.menu-acco__trigger--diet {
+  background: url("../../img/menu-burg/burgers (4).jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.menu-acco__trigger-text {
+  text-align: center;
+  font-family: "gagalin";
+  font-size: 40px;
+  line-height: 80px;
+  -webkit-writing-mode: tb;
+      -ms-writing-mode: tb;
+          writing-mode: tb;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  white-space: nowrap;
+  margin-bottom: 40px;
+}
+
+.menu-acco__content {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "ubuntu";
+  font-weight: 300;
+  width: 0;
+  overflow: hidden;
+}
+
+.menu-acco__item--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-acco__item--active .menu-acco__trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-acco__item--active .menu-acco__trigger::before {
+  content: "";
+  background: rgba(47, 50, 52, 0.93);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+.menu-acco__item--active .menu-acco__trigger--meat {
+  background: url("../../img/menu-burg/burgers (2).jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.menu-acco__item--active .menu-acco__trigger--vegan {
+  background: url("../../img/menu-burg/burgers (3).jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.menu-acco__item--active .menu-acco__trigger--diet {
+  background: url("../../img/menu-burg/burgers (4).jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.menu-acco__item--active .menu-acco__trigger-text {
+  text-align: center;
+  font-family: "gagalin";
+  font-size: 40px;
+  line-height: 80px;
+  -webkit-writing-mode: tb;
+      -ms-writing-mode: tb;
+          writing-mode: tb;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  white-space: nowrap;
+  margin-bottom: 40px;
+}
+
+.menu-acco__item--active .menu-acco__content {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "ubuntu";
+  font-weight: 300;
+  width: 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=menu-acco.css.map */

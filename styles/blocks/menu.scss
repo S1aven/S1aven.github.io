@@ -10,11 +10,11 @@
   &:before {
     content: "";
     display: block;
-    width: 4px;
-    height: 4px;
+    width: 0.25rem;
+    height: 0.25rem;
     border-radius: 50%;
     background: currentColor;
-    margin-right: 16px;
+    margin-right: 1rem;
   }
 
   &:first-child {
@@ -25,9 +25,9 @@
 }
 
 .menu__link {
-  margin-right: 17px;
+  margin-right: 1.0625rem;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-family: "ubuntu";
   text-decoration: none;
   text-transform: uppercase;

@@ -1,0 +1,82 @@
+.footer {
+  position: absolute;
+  min-height: 3.75rem;
+  bottom: 0;
+  background: url("../../img/footer/bg2.jpg") center center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer__col .footer__address {
+  line-height: 1.5rem;
+  color: #ffffff;
+  font-family: "ubuntu";
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.footer__col .footer__phone-pic {
+  width: 0.75rem;
+  height: 0.6875rem;
+  margin-right: 0.25rem;
+}
+
+.footer__col .footer__phone {
+  line-height: 1.5rem;
+  color: #e45028;
+  font-family: "ubuntu";
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer__col_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials .socials__item {
+  margin-right: 1.25rem;
+}
+
+.socials .socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials .socials__link-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+/*# sourceMappingURL=footer.css.map */

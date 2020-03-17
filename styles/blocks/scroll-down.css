@@ -1,0 +1,14 @@
+.scroll-down {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+
+.scroll-down .scroll {
+  width: 1.875rem;
+  height: 0.9375rem;
+}
+/*# sourceMappingURL=scroll-down.css.map */
