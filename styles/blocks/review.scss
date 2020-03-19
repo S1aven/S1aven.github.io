@@ -1,6 +1,7 @@
 .review {
   position: relative;
   color: #fff;
+
   filter: grayscale(100%);
 
   &:hover {
@@ -8,9 +9,23 @@
       opacity: 1;
       transform: scale(1);
       width: 75%;
-      top: 50%;
+      height: 100%;
+      top: 65%;
       transform: translateY(-50%);
       margin: 0 auto;
+
+      @include tablets {
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+        text-align: center;
+        padding: 0.625rem 0;
+      }
+
+      @include phones {
+        top: 75%;
+        padding: 0;
+      }
     }
   } 
 }
@@ -59,5 +74,9 @@
     font-family: "ubuntu";
     font-weight: 300;
     font-size: 0.875rem;
+
+    @include phones {
+      display: none;
+    }
   }
 }

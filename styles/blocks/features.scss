@@ -8,8 +8,20 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2.625rem;
+
+  @include phones {
+    flex-direction: column;
+    margin-top: 1.625rem;
+  }
 }
 
 .features__item {
   width: calc(100% / 3 - 1.625rem);
+
+  @include phones {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
 }

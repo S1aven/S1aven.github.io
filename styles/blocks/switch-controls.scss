@@ -7,6 +7,10 @@
   align-items: center;
   margin-right: 0.9375rem;
   margin-bottom: 0.9375rem;
+
+  @include tablets {
+    margin-bottom: 1.5625rem;
+  }
 }
 
 .switch-controls__radio {

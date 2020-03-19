@@ -14,6 +14,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 2.625rem;
+  @includephones {}
 }
 
 .features__item {

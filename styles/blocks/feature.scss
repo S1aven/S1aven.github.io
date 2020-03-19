@@ -13,7 +13,13 @@
 }
 
 .feature__content {
-    padding-top: 1.875rem;
+    margin-top: 1.875rem;
+
+    @include phones {
+      text-align: left;
+      margin-left: 2.1875rem;
+      margin-top: 0;
+    }
 }
 
 .feature__title {

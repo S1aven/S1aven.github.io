@@ -58,7 +58,10 @@
   @include tablets {
     text-align: center;
     margin-top: 1.5625rem;
-
   }  
+
+  @include phones {
+    font-size: 3rem;
+  }
 }
 

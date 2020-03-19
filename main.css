@@ -494,12 +494,24 @@ img {
   line-height: 1.1;
 }
 
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 3.9375rem;
+  }
+}
+
 .section__title--centered {
   text-align: center;
 }
 
 .section__title--color--black {
   color: #2f3234;
+}
+
+@media screen and (max-width: 480px) {
+  .section__title--color--black {
+    font-size: 3.125rem;
+  }
 }
 
 .section__title--white {
@@ -672,6 +684,12 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hero__desc {
+    font-size: 3rem;
+  }
+}
+
 .btn {
   background: #e35028;
   font-family: "ubuntu";
@@ -719,8 +737,31 @@ img {
   margin-top: 2.625rem;
 }
 
+@media screen and (max-width: 480px) {
+  .features__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1.625rem;
+  }
+}
+
 .features__item {
   width: calc(100% / 3 - 1.625rem);
+}
+
+@media screen and (max-width: 480px) {
+  .features__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
 }
 
 .feature {
@@ -742,7 +783,15 @@ img {
 }
 
 .feature__content {
-  padding-top: 1.875rem;
+  margin-top: 1.875rem;
+}
+
+@media screen and (max-width: 480px) {
+  .feature__content {
+    text-align: left;
+    margin-left: 2.1875rem;
+    margin-top: 0;
+  }
 }
 
 .feature__title {
@@ -786,6 +835,13 @@ img {
   height: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .reviews__item {
+    width: 50%;
+    height: 25%;
+  }
+}
+
 .review {
   position: relative;
   color: #fff;
@@ -798,10 +854,29 @@ img {
   -webkit-transform: scale(1);
           transform: scale(1);
   width: 75%;
-  top: 50%;
+  height: 100%;
+  top: 65%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .review:hover .review__hover {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 100%;
+    text-align: center;
+    padding: 0.625rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review:hover .review__hover {
+    top: 75%;
+    padding: 0;
+  }
 }
 
 .review__img-wrapper {
@@ -853,6 +928,12 @@ img {
   font-size: 0.875rem;
 }
 
+@media screen and (max-width: 480px) {
+  .review__content p {
+    display: none;
+  }
+}
+
 .order-section {
   background: url("../../img/form/form-bg.jpg") center center no-repeat;
   background-size: cover;
@@ -866,11 +947,28 @@ img {
   margin-top: 2.0625rem;
 }
 
+@media screen and (max-width: 768px) {
+  .order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 17%;
+  }
+}
+
 .order__left {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .order__left {
+    margin-right: 0;
+    margin-bottom: 0.625rem;
+  }
 }
 
 .order__right {
@@ -965,6 +1063,12 @@ img {
           align-items: center;
   margin-right: 0.9375rem;
   margin-bottom: 0.9375rem;
+}
+
+@media screen and (max-width: 768px) {
+  .switch-controls__elem {
+    margin-bottom: 1.5625rem;
+  }
 }
 
 .switch-controls__radio {
@@ -1245,6 +1349,8 @@ img {
 .team-acco__item--active .team-acco__img {
   height: 100px;
   width: 100px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .team-acco__item--active .team-acco__text {
@@ -1431,7 +1537,7 @@ img {
   line-height: 1.5rem;
   font-family: "ubuntu";
   font-weight: 300;
-  width: 60%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1474,10 +1580,29 @@ img {
           flex-direction: row;
 }
 
+@media screen and (max-width: 480px) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
 .footer__col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__col {
+    margin: 0.5rem 0;
+  }
 }
 
 .footer__col .footer__address {
