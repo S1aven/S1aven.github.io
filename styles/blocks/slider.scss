@@ -1,0 +1,112 @@
+.slider {
+  background: linear-gradient(0deg, #f9b33b 0%, #ea8c38 48%, #f9b33b 74%) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.slider__item {
+  display: flex;
+  align-items: center;
+
+  .slider__left {
+    flex: 1;
+    position: relative;
+
+    .ccal {
+      position: absolute;
+      bottom: -23%;
+      left: 5%;
+
+      @include tablets {
+        bottom: 97%;
+        left: 84%;
+      }
+
+      @include phones {
+        bottom: 110%;
+        left: 85%;
+      }
+    }
+  }
+
+  .slider__right {
+    flex: 1;
+
+    @include tablets {
+      width: 80%;
+      margin-top: 1.875rem;
+    }
+
+    @include phones {
+      width: 100%;
+    }
+
+    p {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      color: #ffffff;
+      font-family: "ubuntu";
+      font-weight: 300;
+      margin-bottom: 2.8125rem;
+
+      @include tablets {
+        margin-bottom: 3.75rem;
+      }
+
+      @include phones {
+        margin-bottom: 1.875rem;
+      }
+    }
+  }
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.slider__title {
+  line-height: 4rem;
+  margin-bottom: 2.625rem;
+
+  @include phones {
+    font-size: 3.125rem;
+    line-height: 3.3125rem;
+    margin-bottom: 1.25rem;
+    width: 90%;
+    margin-left: 1.875rem;
+  }
+}
+
+.price__size {
+  font-size: 4.5rem;
+  letter-spacing: -0.125rem;
+  line-height: 1.75rem;
+  color: #e35028;
+  font-family: "gagalin";
+  text-align: center;
+
+  @include phones {
+    font-size: 3.125rem;
+    letter-spacing: -0.0625rem;
+    line-height: 1.75rem;
+  }
+}
+
+.price__forex {
+  font-size: 1.875rem;
+  line-height: 1.75rem;
+  color: #e35028;
+  font-family: "Gagalin";
+  margin-right: 1.5625rem;
+
+  @include phones {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+.price__btn {
+  vertical-align: super;
+}

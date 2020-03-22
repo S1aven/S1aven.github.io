@@ -5,6 +5,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .menu__item {
@@ -14,16 +15,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
 }
 
 .menu__item:before {
   content: "";
   display: block;
-  width: 4px;
-  height: 4px;
+  width: 0.25rem;
+  height: 0.25rem;
   border-radius: 50%;
   background: currentColor;
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 
 .menu__item:first-child:before {
@@ -31,9 +33,9 @@
 }
 
 .menu__link {
-  margin-right: 15px;
+  margin-right: 1.0625rem;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-family: "ubuntu";
   text-decoration: none;
   text-transform: uppercase;

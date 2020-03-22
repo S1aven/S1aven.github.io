@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
 
   &--align--top {
     justify-content: flex-start;
@@ -11,11 +11,15 @@
 }
 
 .section__title {
-  line-height: 85px;
+  line-height: 5.3125rem;
   color: $yellow;
   font-family: "gagalin";
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 1.1;
+
+  @include phones {
+    font-size: 3.9375rem;
+  }
 
   &--centered {
     text-align: center;
@@ -23,5 +27,13 @@
 
   &--color--black {
     color: $black;
+
+    @include phones {
+      font-size: 3.125rem;
+    }
+  }
+
+  &--white {
+    color: $white;
   }
 }

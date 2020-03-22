@@ -13,11 +13,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 72%;
-  margin-top: 42px;
+  margin-top: 2.625rem;
+  @includephones {}
 }
 
 .features__item {
-  width: calc(100% / 3 - 26px);
+  width: calc(100% / 3 - 1.625rem);
 }
 /*# sourceMappingURL=features.css.map */

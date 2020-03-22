@@ -1,6 +1,7 @@
 .review {
   position: relative;
   color: #fff;
+
   filter: grayscale(100%);
 
   &:hover {
@@ -8,9 +9,23 @@
       opacity: 1;
       transform: scale(1);
       width: 75%;
-      top: 50%;
+      height: 100%;
+      top: 65%;
       transform: translateY(-50%);
       margin: 0 auto;
+
+      @include tablets {
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+        text-align: center;
+        padding: 0.625rem 0;
+      }
+
+      @include phones {
+        top: 75%;
+        padding: 0;
+      }
     }
   } 
 }
@@ -46,18 +61,22 @@
 .review__username {
   h5 {
     font-family: "gagalin";
-    font-size: 14px;
-    margin-bottom: 15px;
-    line-height: 28px;
+    font-size: 0.875rem;
+    margin-bottom: 0.9375rem;
+    line-height: 1.75rem;
   }
 }
 
 .review__content {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   p {
-    line-height: 24px;
+    line-height: 1.5rem;
     font-family: "ubuntu";
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.875rem;
+
+    @include phones {
+      display: none;
+    }
   }
 }

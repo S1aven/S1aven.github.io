@@ -1,0 +1,120 @@
+.composition {
+  display: flex;
+  position: absolute;
+  top: -20%;
+  left: 5%;
+
+  @include tablets {
+    left: 2%;
+  }
+
+  @include phones {
+    left: 0;
+    top: -39%;
+  }
+
+  .composition__drop-table {
+    border-radius: 0.3125rem;
+    background-color: #ffffff;
+    position: absolute;
+    left: 99999999px;
+    width: max-content;
+    opacity: 0;
+    transition: opacity .4s;
+
+  }
+
+  &:hover {
+    .composition__drop-table {
+      display: flex;
+      left: 100%;
+      opacity: .9;
+      z-index: 100;
+    }
+
+    .composition__pic {
+      background-color: #e35028;
+    }
+  }
+}
+
+.icon__svg {
+  width: 3rem;
+  height: 2.5625rem;
+}
+
+.composition__list {
+  position: relative;
+}
+
+.composition__item {
+  display: flex;
+  align-items: center;
+  padding: 0.3125rem 1.875rem;
+
+  @include tablets {
+    padding: 0.3125rem 3.75rem;
+  }
+}
+
+.burger {
+  max-width: initial;
+
+  @include phones {
+    max-width: 92%;
+    margin-left: 2.1875rem;
+  }
+}
+
+.composition__pic {
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 0.3125rem;
+  background-color: #f08c33;;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.composition__inform {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @include phones {
+    margin-right: 1.5625rem;
+  }
+
+  .composition__text {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #2f3234;
+    font-family: "ubuntu";
+    font-weight: 500;
+    margin-left: 0.9375rem;
+    margin-right: 2.8125rem;
+  }
+
+  .composition__weght {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #2f3234;
+    font-family: "ubuntu";
+    font-weight: 300;
+    text-align: right;
+  }
+}
+
+.composition__close {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.9375rem;
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+

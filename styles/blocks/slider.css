@@ -1,0 +1,70 @@
+.slider {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9b33b), color-stop(48%, #ea8c38), color-stop(74%, #f9b33b)) center center no-repeat;
+  background: linear-gradient(0deg, #f9b33b 0%, #ea8c38 48%, #f9b33b 74%) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__item .slider__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.slider__item .slider__left .ccal {
+  position: absolute;
+  bottom: -23%;
+  left: 5%;
+}
+
+.slider__item .slider__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.slider__item .slider__right p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "ubuntu";
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+.slider__title {
+  line-height: 64px;
+  margin-bottom: 42px;
+}
+
+.price__size {
+  font-size: 72px;
+  letter-spacing: -2px;
+  line-height: 28px;
+  color: #e35028;
+  font-family: "gagalin";
+  text-align: center;
+}
+
+.price__forex {
+  font-size: 30px;
+  line-height: 28px;
+  color: #e35028;
+  font-family: "Gagalin";
+  margin-right: 25px;
+}
+
+.price__btn {
+  vertical-align: super;
+}
+/*# sourceMappingURL=slider.css.map */
