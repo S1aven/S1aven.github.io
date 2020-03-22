@@ -1,13 +1,7 @@
 .scroll-down {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   list-style: none;
-
-  .scroll {
-    width: 1.875rem;
-    height: 0.9375rem;
-    
-  }
 }

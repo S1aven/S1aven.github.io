@@ -2,17 +2,9 @@ $orange: #e45028;
 $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
-$white: #fff;
 
-$phones: 480px;
-$tablets: 768px;
-$laptop: 992px;
-$desktop: 1200px;
-
-@import './styles/layout/normalize';
-@import './styles/layout/media.scss';
-@import './styles/layout/mixin.scss';
 @import './styles/layout/fonts';
+@import './styles/layout/normalize';
 @import './styles/layout/base';
 
 @import './styles/blocks/section.scss';
@@ -27,16 +19,3 @@ $desktop: 1200px;
 @import './styles/blocks/review.scss';
 @import './styles/blocks/order-section.scss';
 @import './styles/blocks/order.scss';
-@import './styles/blocks/switch-controls.scss';
-@import './styles/blocks/team.scss';
-@import './styles/blocks/team-acco.scss';
-@import './styles/blocks/menu-burg.scss';
-@import './styles/blocks/menu-acco.scss';
-@import './styles/blocks/map.scss';
-@import './styles/blocks/footer.scss';
-
-// @import './styles/blocks/order-link.scss';
-@import './styles/blocks/hamburger-menu-link.scss';
-@import './styles/blocks/hamburger-menu.scss';
-
-@import './styles/blocks/fixed-menu.scss';

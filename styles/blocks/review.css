@@ -49,19 +49,19 @@
 
 .review__username h5 {
   font-family: "gagalin";
-  font-size: 0.875rem;
-  margin-bottom: 0.9375rem;
-  line-height: 1.75rem;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 28px;
 }
 
 .review__content {
-  margin-bottom: 0.625rem;
+  margin-bottom: 10px;
 }
 
 .review__content p {
-  line-height: 1.5rem;
+  line-height: 24px;
   font-family: "ubuntu";
   font-weight: 300;
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 /*# sourceMappingURL=review.css.map */

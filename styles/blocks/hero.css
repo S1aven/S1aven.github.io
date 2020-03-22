@@ -26,22 +26,22 @@
   -webkit-box-flex: .75;
       -ms-flex: .75;
           flex: .75;
-  padding-left: 0.9375rem;
+  padding-left: 15px;
 }
 
 .hero__desc {
   font-weight: 500;
   font-family: "lifehack";
-  font-size: 4.0625rem;
+  font-size: 65px;
   line-height: 0.9;
   text-transform: lowercase;
-  letter-spacing: -0.125rem;
-  padding-top: 1.25rem;
+  letter-spacing: -2px;
+  padding-top: 20px;
 }
 
 .hero__text {
   width: 50%;
-  padding-top: 4.6875rem;
-  padding-left: 0.9375rem;
+  padding-top: 75px;
+  padding-left: 15px;
 }
 /*# sourceMappingURL=hero.css.map */

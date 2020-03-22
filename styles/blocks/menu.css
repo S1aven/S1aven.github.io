@@ -19,11 +19,11 @@
 .menu__item:before {
   content: "";
   display: block;
-  width: 0.25rem;
-  height: 0.25rem;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   background: currentColor;
-  margin-right: 1rem;
+  margin-right: 15px;
 }
 
 .menu__item:first-child:before {
@@ -31,9 +31,9 @@
 }
 
 .menu__link {
-  margin-right: 1.0625rem;
+  margin-right: 15px;
   font-weight: 500;
-  font-size: 0.8125rem;
+  font-size: 13px;
   font-family: "ubuntu";
   text-decoration: none;
   text-transform: uppercase;

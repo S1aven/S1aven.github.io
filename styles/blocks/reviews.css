@@ -1,7 +1,7 @@
 .reviews {
   background: black;
   height: 100vh;
-  min-height: 40.625rem;
+  min-height: 650px;
 }
 
 .reviews__list {
