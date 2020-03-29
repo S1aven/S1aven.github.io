@@ -10,21 +10,23 @@
       transform: scale(1);
       width: 75%;
       height: 100%;
-      top: 65%;
-      transform: translateY(-50%);
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
 
       @include tablets {
-        top: 50%;
-        transform: translateY(-50%);
         height: 100%;
         text-align: center;
+        align-items: center;
         padding: 0.625rem 0;
+        margin: 0 auto;
       }
 
       @include phones {
-        top: 75%;
-        padding: 0;
+        padding: 0 10%;
+        margin: 0 auto;
       }
     }
   } 

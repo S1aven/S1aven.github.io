@@ -8,5 +8,11 @@
   .menu-burg__title {
     margin-top: 6.875rem;
     margin-left: 5.9375rem;
+
+    @include phones {
+      font-size: 3.125rem;
+      margin-left: 2.1875rem;
+      margin-top: 3.875rem;
+    }
   }
 }

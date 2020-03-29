@@ -7,6 +7,10 @@
     flex-direction: column;
     padding: 0px 17%;
   }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .order__left {
@@ -69,19 +73,29 @@
   resize: none;
 }
 
+.order__buttons-row {
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .order__buttons {
   display: flex;
+
+  .btn-order {
+    border: none;
+  }
+  
+  .btn-reset {
+    border: none;
+    background: none;
+    font-weight: 300;
+    font-size: 0.875rem;
+    text-transform: none;
+    margin-left: 0.3125rem;
+  }
 }
 
-.btn-order {
-  border: none;
-}
-
-.btn-reset {
-  border: none;
-  background: none;
-  font-weight: 300;
-  font-size: 0.875rem;
-  text-transform: none;
-  margin-left: 0.3125rem;
-}
