@@ -94,30 +94,53 @@ function loop(direction, e) {
 const Form = document.querySelector('.order');
 const btnOrder = document.querySelector('.btn-order');
 const btnReset = document.querySelector('.btn-reset');
+const success = document.querySelector('#success');
+const error = document.querySelector('#error');
+const StatusPopupClose = document.querySelector('.status-popup__close');
 
+StatusPopupClose.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  success.style.display = 'none';
+  error.style.display = 'none';
+});
 
 btnOrder.addEventListener('click', event => {
   event.preventDefault();
 
   if (validateForm(Form)) {
-    const data = {
-      name: Form.elements.name.value,
-      phone: Form.elements.phone.value,
-      street: Form.elements.street.value,
-      house: Form.elements.house.value,
-      corpus: Form.elements.corpus.value,
-      flat: Form.elements.flat.value,
-      floor: Form.elements.floor.value,
-      comment: Form.elements.comment.value
-    }
-    // var formData = new FormData(Form);
+  //   const data = {
+  //     name: Form.elements.name.value,
+  //     phone: Form.elements.phone.value,
+  //     street: Form.elements.street.value,
+  //     house: Form.elements.house.value,
+  //     corpus: Form.elements.corpus.value,
+  //     flat: Form.elements.flat.value,
+  //     floor: Form.elements.floor.value,
+  //     comment: Form.elements.comment.value
+  //   }
+    var formData = new FormData();
+    formData.append('to', 'qwerty@mail.tu');
+    formData.append('name', Form.elements.name.value);
+    formData.append('phone', Form.elements.phone.value);
+    formData.append('comment', Form.elements.comment.value);
+  }
 
     const xhr = new XMLHttpRequest();
-    xhr.responseType = 'json';
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-    xhr.send(JSON.stringify(data));
-    console.log(data);
-  }
+    xhr.send(formData);
+    console.log(formData);
+    xhr.onload = function() {
+
+      if (xhr.response.status === true) {
+        console.log('cool');
+        success.style.display = 'block';
+        
+      } else {
+        error.style.display = 'block';
+      }   
+    }
+  
 });
 
 
@@ -132,25 +155,25 @@ function validateForm(form) {
       valid = false;
   }
 
-  if (!validateField(form.elements.street)) {
-      valid = false;
-  }
+  // if (!validateField(form.elements.street)) {
+  //     valid = false;
+  // }
 
-  if (!validateField(form.elements.house)) {
-      valid = false;
-  }
+  // if (!validateField(form.elements.house)) {
+  //     valid = false;
+  // }
 
-  if (!validateField(form.elements.corpus)) {
-      valid = false;
-  }
+  // if (!validateField(form.elements.corpus)) {
+  //     valid = false;
+  // }
 
-  if (!validateField(form.elements.flat)) {
-      valid = false;
-  }
+  // if (!validateField(form.elements.flat)) {
+  //     valid = false;
+  // }
 
-  if (!validateField(form.elements.floor)) {
-      valid = false;
-  }
+  // if (!validateField(form.elements.floor)) {
+  //     valid = false;
+  // }
 
   if (!validateField(form.elements.comment)) {
       valid = false;
