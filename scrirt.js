@@ -16,7 +16,7 @@ HamburgerMenuClose.addEventListener('click', function(e) {
   HamburgerMenu.style.display = 'none';
 });
 
-// AccordeonItem
+// AccordeonTeam
 
 const TeamAccoItem = document.querySelectorAll('.team-acco__item');
 var i;
@@ -88,6 +88,28 @@ function loop(direction, e) {
   }
 };
 
+// full-review popup
+
+const ReviewsBtn = document.querySelectorAll('.reviews-btn');
+const FullReview = document.querySelector('.full-review');
+const FullReviewCloseBtn = document.querySelector('.full-review__close-btn');
+
+for (i = 0; i < ReviewsBtn.length; i++) {
+
+  ReviewsBtn[i].addEventListener('click', function(e) {
+    e.preventDefault();
+
+    FullReview.style.display = 'block'; 
+    body.style.overflow = 'hidden';
+  }); 
+};
+
+FullReviewCloseBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  FullReview.style.display = 'none'; 
+  body.style.overflow = 'visible';
+}); 
 
 // Form
 
@@ -96,29 +118,26 @@ const btnOrder = document.querySelector('.btn-order');
 const btnReset = document.querySelector('.btn-reset');
 const success = document.querySelector('#success');
 const error = document.querySelector('#error');
-const StatusPopupClose = document.querySelector('.status-popup__close');
+const StatusPopupClose = document.querySelectorAll('.status-popup__close');
+const body = document.querySelector('body');
 
-StatusPopupClose.addEventListener('click', function(e) {
-  e.preventDefault();
+for (i = 0; i < StatusPopupClose.length; i++) {
 
-  success.style.display = 'none';
-  error.style.display = 'none';
-});
+  StatusPopupClose[i].addEventListener('click', function(e) {
+    e.preventDefault();
+
+    body.style.overflow = 'visible';
+    success.style.display = 'none';
+    error.style.display = 'none';
+    
+  }); 
+};
 
 btnOrder.addEventListener('click', event => {
   event.preventDefault();
 
   if (validateForm(Form)) {
-  //   const data = {
-  //     name: Form.elements.name.value,
-  //     phone: Form.elements.phone.value,
-  //     street: Form.elements.street.value,
-  //     house: Form.elements.house.value,
-  //     corpus: Form.elements.corpus.value,
-  //     flat: Form.elements.flat.value,
-  //     floor: Form.elements.floor.value,
-  //     comment: Form.elements.comment.value
-  //   }
+  
     var formData = new FormData();
     formData.append('to', 'qwerty@mail.tu');
     formData.append('name', Form.elements.name.value);
@@ -132,12 +151,14 @@ btnOrder.addEventListener('click', event => {
     console.log(formData);
     xhr.onload = function() {
 
-      if (xhr.response.status === true) {
-        console.log('cool');
+      if (xhr.status) {
+        console.log(xhr.response.message);
         success.style.display = 'block';
+        body.style.overflow = 'hidden';
         
       } else {
         error.style.display = 'block';
+        body.style.overflow = 'hidden';
       }   
     }
   

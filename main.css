@@ -2143,16 +2143,8 @@ img {
   right: 0;
   bottom: 0;
   background: rgba(47, 50, 52, 0.99);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   z-index: 100;
   display: none;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
   color: #fff;
 }
 
@@ -2242,6 +2234,69 @@ img {
   margin-bottom: 0.3125rem;
 }
 
+.full-review {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(47, 50, 52, 0.99);
+  z-index: 100;
+}
+
+.full-review .full-review__inner {
+  padding: 1.25rem 2.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 5px;
+  width: 35%;
+}
+
+@media screen and (max-width: 768px) {
+  .full-review .full-review__inner {
+    width: 69%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .full-review .full-review__inner {
+    width: 90%;
+  }
+}
+
+.full-review .full-review__inner .full-review__title {
+  line-height: 28px;
+  font-family: "gagalin";
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.full-review .full-review__inner .full-review__content {
+  line-height: 24px;
+  font-family: "ubuntu";
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.full-review .full-review__inner .full-review__close {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+}
+
+.full-review .full-review__inner .full-review__close .full-review__close-btn {
+  width: 15px;
+  height: 15px;
+  fill: #e45028;
+}
+
 .popup {
   display: none;
 }
@@ -2253,16 +2308,7 @@ img {
   right: 0;
   bottom: 0;
   background: rgba(47, 50, 52, 0.99);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   z-index: 100;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
-  width: 100%;
 }
 
 .status-popup__inner {
