@@ -1,0 +1,57 @@
+.full-review {
+  position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(#2f3234, .99);
+	z-index: 100;	
+
+    .full-review__inner {
+      padding: 1.25rem 2.25rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      border-radius: 0.3125rem;
+      width: 35%;
+
+      @include tablets {
+        width: 69%;
+      }
+
+      @include phones {
+        width: 90%;
+      }
+
+      .full-review__title {
+        line-height: 1.75rem;
+        font-family: "gagalin";
+        font-size: 1rem;
+        margin-bottom: 0.9375rem;
+      }
+
+      .full-review__content {
+        line-height: 1.5rem;
+        font-family: "ubuntu";
+        font-weight: 300;
+        font-size: 0.875rem;
+      }
+
+      .full-review__close {
+        display: inline-flex;
+        position: absolute;
+        right: 3%;
+        top: 5%;
+    
+        .full-review__close-btn {   
+          width: 0.9375rem;
+          height: 0.9375rem;
+          fill: #e45028;;
+        }
+
+      }
+  }
+}
+

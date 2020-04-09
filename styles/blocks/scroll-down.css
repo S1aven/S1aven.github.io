@@ -1,0 +1,9 @@
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+/*# sourceMappingURL=scroll-down.css.map */

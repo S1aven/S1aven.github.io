@@ -1,0 +1,91 @@
+.composition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -20%;
+  left: 5%;
+}
+
+.composition .composition__drop-table {
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 99999999px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  opacity: 0;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+}
+
+.composition:hover .composition__drop-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 100%;
+  opacity: .9;
+}
+
+.icon__svg {
+  width: 3rem;
+  height: 2.5625rem;
+}
+
+.composition__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 30px;
+}
+
+.burger {
+  max-width: initial;
+}
+
+.composition__pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  background-color: #e35028;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.composition__inform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.composition__inform .composition__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #2f3234;
+  font-family: "ubuntu";
+  font-weight: 500;
+  margin-left: 15px;
+  margin-right: 45px;
+}
+
+.composition__inform .composition__weght {
+  font-size: 14px;
+  line-height: 24px;
+  color: #2f3234;
+  font-family: "ubuntu";
+  font-weight: 300;
+  text-align: right;
+}
+/*# sourceMappingURL=composition.css.map */

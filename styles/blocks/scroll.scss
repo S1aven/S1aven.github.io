@@ -1,0 +1,30 @@
+.scroll-down {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+}
+
+.scroll-left {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transform: rotate(90deg);
+  top: 50%;
+  z-index: 100;
+}
+
+.scroll-right{
+  position: absolute;
+  right: 0;
+  list-style: none;
+  transform: rotate(-90deg);
+  top: 50%;
+  z-index: 100;
+}
+
+.scroll {
+  width: 1.875rem;
+  height: 0.9375rem;
+}

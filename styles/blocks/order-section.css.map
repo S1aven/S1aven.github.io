@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,UAAU,EAAE,iCAAiC,CAAC,MAAM,CAAC,MAAM,CAAC,SAAS;EACrE,eAAe,EAAE,KAAK;CACvB",
+    "sources": [
+        "order-section.scss"
+    ],
+    "names": [],
+    "file": "order-section.css"
+}

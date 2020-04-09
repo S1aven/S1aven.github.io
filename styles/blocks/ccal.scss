@@ -1,0 +1,15 @@
+.ccal {
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+
+  @include tablets {
+    bottom: 87%;
+    left: 74%;
+  }
+
+  @include phones {
+    bottom: 85%;
+    left: 85%;
+  }
+}
