@@ -9,11 +9,11 @@ $tablets: 768px;
 $laptop: 992px;
 $desktop: 1200px;
 
-@import './styles/layout/normalize';
+// @import './styles/layout/normalize';
 @import './styles/layout/media.scss';
 @import './styles/layout/mixin.scss';
-@import './styles/layout/fonts';
-@import './styles/layout/base';
+@import './styles/layout/fonts.scss';
+@import './styles/layout/base.scss';
 
 @import './styles/blocks/section.scss';
 @import './styles/blocks/header.scss';
